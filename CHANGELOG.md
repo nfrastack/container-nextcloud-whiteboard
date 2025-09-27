@@ -1,3 +1,9 @@
+## 0.0.3 2025-09-27 <dave at tiredofit dot ca>
+
+   ### Added
+      - Nextcloud Whiteboard 1.2.1
+
+
 ## 0.0.2 2025-02-08 <dave at tiredofit dot ca>
    ### updated
      - whiteboard 1.1.0
