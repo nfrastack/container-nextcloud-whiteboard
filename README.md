@@ -97,15 +97,15 @@ Below is the complete list of available options that can be used to customize yo
 
 #### Core Configuration
 
-| Parameter       | Description | Default   | Advanced |
-| --------------- | ----------- | --------- | -------- |
-| `BACKUP_PATH`   |             | `/backup` ||
-| `ENABLE_TLS`    |             | `FALSE`   ||
-| `LISTEN_PORT`   |             | `3002`    ||
-| `REDIS_URL`     |             |         ||
-| `STORAGE_TYPE`  | `lru` `redis`            | `lru`     ||
-| `TLS_CERT_FILE` |             |         ||
-| `TLS_KEY_FILE`  |             |         | |
+| Parameter       | Description   | Default   | Advanced |
+| --------------- | ------------- | --------- | -------- |
+| `BACKUP_PATH`   |               | `/backup` |          |
+| `ENABLE_TLS`    |               | `FALSE`   |          |
+| `LISTEN_PORT`   |               | `3002`    |          |
+| `REDIS_URL`     |               |           |          |
+| `STORAGE_TYPE`  | `lru` `redis` | `lru`     |          |
+| `TLS_CERT_FILE` |               |           |          |
+| `TLS_KEY_FILE`  |               |           |          |
 
 ## Users and Groups
 

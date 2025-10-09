@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: MIT
 
 source /container/base/functions/container/init
-prepare_service both
+prepare_service
+SERVICE_NAME="ncwbcs"
 
-PROCESS_NAME="whiteboard"
 check_container_initialized
 
 transform_file_var \
