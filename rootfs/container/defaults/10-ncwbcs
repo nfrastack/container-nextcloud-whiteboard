@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: © 2025 Nfrastack <code@nfrastack.com>
+#
+# SPDX-License-Identifier: MIT
+
+BACKUP_PATH=${BACKUP_PATH:-"/backup"}
+ENABLE_TLS=${ENABLE_TLS:-"FALSE"}
+LISTEN_PORT=${LISTEN_PORT:-"3002"}
+REDIS_URL=${REDIS_URL:-""}
+STORAGE_TYPE=${STORAGE_TYPE:-"lru"}
+TLS_CERT_FILE=${TLS_CERT_FILE:-""}
+TLS_KEY_FILE=${TLS_KEY_FILE:-""}

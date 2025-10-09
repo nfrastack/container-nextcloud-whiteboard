@@ -1,3 +1,8 @@
+## 0.1.0pre 2025-10-09 <code at nfrastack dot com>
+
+    ### Changed
+       - Switch to nfrastack/container-base
+
 ## 0.0.99 2025-10-09 <dave at tiredofit dot ca>
 
 Add EOL notice and deprecate image
@@ -10,7 +15,8 @@ Add EOL notice and deprecate image
 
 
 ## 0.0.2 2025-02-08 <dave at tiredofit dot ca>
-   ### updated
+
+   ### Changed
      - whiteboard 1.1.0
      - Alpine 21
 

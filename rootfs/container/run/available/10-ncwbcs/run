@@ -1,6 +1,9 @@
 #!/command/with-contenv bash
+# SPDX-FileCopyrightText: © 2025 Nfrastack <code@nfrastack.com>
+#
+# SPDX-License-Identifier: MIT
 
-source /assets/functions/00-container
+source /container/base/functions/container/init
 prepare_service both
 
 PROCESS_NAME="whiteboard"
@@ -16,11 +19,10 @@ export NEXTCLOUD_URL=${NEXTCLOUD_URL}
 export JWT_SECRET_KEY=${JWT_SECRET_KEY}
 
 cd /app
-
 liftoff
 
-print_start "Starting Nextcloud Whiteboard Collaboration Server"
-s6-setuidgid ncwhiteboard \
+print_start "Starting Nextcloud Whiteboard Collaboration Server $(grep -o "ADD: Nextcloud Whiteboard .* |" /container/build/${IMAGE_NAME/\//_}/build.log | awk '{print $4}')"
+exec s6-setuidgid ncwbcs \
                             npm \
                                 run \
                                     server:start

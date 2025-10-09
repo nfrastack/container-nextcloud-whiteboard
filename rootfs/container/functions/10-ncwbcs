@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: © 2025 Nfrastack <code@nfrastack.com>
+#
+# SPDX-License-Identifier: MIT
+
+nwwbcs_bootstrap_filesystem() {
+    create_folder "${BACKUP_PATH}" ncwbcs:ncwbcs 750
+}

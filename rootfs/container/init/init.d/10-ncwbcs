@@ -1,0 +1,19 @@
+#!/command/with-contenv bash
+# SPDX-FileCopyrightText: © 2025 Nfrastack <code@nfrastack.com>
+#
+# SPDX-License-Identifier: MIT
+
+source /container/base/functions/container/init
+prepare_service
+SERVICE_NAME="ncwbcs"
+
+transform_file_var \
+                    JWT_SECRET_KEY \
+                    NEXTCLOUD_URL
+
+sanity_var NEXTCLOUD_URL "Full URL to Nextcloud"
+sanity_var JWT_SECRET_KEY "Shared Secret for communication"
+
+ncwbcs_bootstrap_filesystem
+
+liftoff
