@@ -4,6 +4,31 @@ source /assets/functions/00-container
 prepare_service
 PROCESS_NAME="nextcloud-whiteboard"
 
+cat <<EOF
+
+***************************************************************************************************
+*                                                                                                 *
+*                    END OF LIFE NOTICE OCTOBER 09, 2025                                          *
+*                               tiredofit/nextcloud-whiteboard                                    *
+*                                                                                                 *
+* This image is no longer maintained as of and will not receive updates.                          *
+*                                                                                                 *
+* A successor image is available at:                                                              *
+*                                                                                                 *
+* Repository | Documentation:                                                                     *
+*   - https://github.com/nfrastack/container-nextcloud-whiteboard                                 *
+*                                                                                                 *
+* Image Registries:                                                                               *
+*   - https://hub.docker.com/r/nfrastack/nextcloud-whiteboard                                     *
+*   - https://github.com/nfrastack/container-moodle/pkgs/container/container-nextcloud-whiteboard *
+*                                                                                                 *
+* Please visit https://nfrastack.com for more information.                                        *
+*                                                                                                 *
+***************************************************************************************************
+
+EOF
+
+sleep 15
 transform_file_var \
                     JWT_SECRET_KEY \
                     NEXTCLOUD_URL
