@@ -9,7 +9,7 @@ SERVICE_NAME="ncwbcs"
 
 check_container_initialized
 
-transform_file_var \
+transform_var file \
                     JWT_SECRET_KEY \
                     NEXTCLOUD_URL
 
